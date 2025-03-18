@@ -3,10 +3,10 @@ const url = require("node:url");
 const puerto = 3000;
 const fs = require("node:fs");
 
-// Leer directamente el JSON existente con las categorías
+//leer directamente el JSON existente con las categorias
 let arregloHerramientas = JSON.parse(fs.readFileSync("herramientas.json", "utf8"));
 
-// Función para obtener todas las herramientas de todas las categorías
+//Funcion para obtener todas las herramientas de todas las categoriams
 function obtenerTodasLasHerramientas() {
     let herramientas = [];
     for (const categoria in arregloHerramientas) {
@@ -29,9 +29,9 @@ const server = http.createServer((request, response) => {
     const parsedUrl = url.parse(request.url, true);
     const path = parsedUrl.pathname;
 
-    // Descomponemos la ruta en partes, ejemplo: /accesibilidadWeb/1
-    const partesRuta = path.split('/').filter(Boolean); // Filtramos valores vacíos
-    const categoria = partesRuta[0]; // Primera parte es la categoría
+    //Descomponemos la ruta en partes para que quede como: /accesibilidadWeb/1
+    const partesRuta = path.split('/').filter(Boolean); //Filtramos valores vacois
+    const categoria = partesRuta[0]; // Primera parte es la categoria
     const idHerramienta = partesRuta[1]; // Segunda parte es el ID de la herramienta
 
     // Ruta principal - devuelve todas las herramientas
@@ -51,8 +51,8 @@ const server = http.createServer((request, response) => {
             request.on("end", () => {
                 const nuevaHerramienta = JSON.parse(body);
                 nuevaHerramienta.id = obtenerTodasLasHerramientas().length > 0 ? obtenerTodasLasHerramientas().length + 1 : 1;
-                // Aquí podrías agregar la nueva herramienta a la categoría deseada.
-                arregloHerramientas.accesibilidadWeb.herramienta.push(nuevaHerramienta); // Ejemplo de agregar a accesibilidadWeb
+
+                arregloHerramientas.accesibilidadWeb.herramienta.push(nuevaHerramienta); 
                 fs.writeFileSync("herramientas.json", JSON.stringify(arregloHerramientas, null, 2), "utf8");
 
                 response.statusCode = 201;
@@ -61,11 +61,11 @@ const server = http.createServer((request, response) => {
             });
         }
     } else if (categoria && idHerramienta) {
-        // Verificamos si la categoría existe en nuestro arreglo de herramientas
+        // Verificamos si la categoria existe en nuestro arreglo de herramientas
         if (arregloHerramientas[categoria] && arregloHerramientas[categoria].herramienta) {
             const herramientasCategoria = arregloHerramientas[categoria].herramienta;
 
-            // Buscamos la herramienta en la categoría correspondiente
+            // Buscamos la herramienta en la categoria correspondiente
             const herramienta = herramientasCategoria.find(herr => herr.id.toString() === idHerramienta);
 
             if (!herramienta) {
