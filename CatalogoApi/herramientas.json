@@ -1,0 +1,211 @@
+{
+    "accesibilidadWeb": {
+      "herramienta": [
+        {
+          "id": 1,
+          "titulo": "Prueba de contraste",
+          "subtitulo": "Mejora de visibilidad para usuarios con baja visión.",
+          "descripcion": "El alto contraste incrementa la diferencia entre los colores de fondo y texto, mejorando la legibilidad para personas con baja visión o sensibilidad a la luz.",
+          "caracteristicas": [
+            "Aplicación de esquemas de alto contraste en tiempo real.",
+            "Cumplimiento con los estándares de accesibilidad (WCAG).",
+            "Evaluación del contraste en textos, botones y otros elementos visuales."
+          ],
+          "switch_id": "contrastSwitch"
+        },
+        {
+          "id": 2,
+          "titulo": "Daltonismo",
+          "subtitulo": "Adaptación del color para accesibilidad visual.",
+          "descripcion": "El daltonismo es una alteración de la percepción del color que dificulta la distinción de ciertos tonos. Esta herramienta permite simular distintos tipos de daltonismo para evaluar la accesibilidad del diseño web.",
+          "caracteristicas": [
+            "Simulación de diferentes tipos de daltonismo: protanopía, deuteranopía, tritanopía.",
+            "Aplicación de filtros sobre la interfaz para visualizar cambios en tiempo real.",
+            "Evaluación de la diferenciación de colores en la interfaz."
+          ],
+          "switch_id": "DaltonismoSwitch"
+        },
+        {
+          "id": 3,
+          "titulo": "Lector de pantalla",
+          "subtitulo": "Conversión de texto a voz para accesibilidad.",
+          "descripcion": "Los lectores de pantalla permiten que personas con discapacidad visual accedan al contenido web mediante síntesis de voz.",
+          "caracteristicas": [
+            "Lectura en voz alta del contenido textual de una página.",
+            "Evaluación de la estructura semántica del sitio web.",
+            "Detección de elementos sin etiquetas accesibles."
+          ],
+          "switch_id": "lectorSwitch"
+        },
+        {
+          "id": 4,
+          "titulo": "Modo Enfoque",
+          "subtitulo": "Indicador visual para navegación con teclado.",
+          "descripcion": "Resalta los elementos activos durante la navegación con teclado, mejorando la accesibilidad de la interfaz.",
+          "caracteristicas": [
+            "Resaltado de los elementos activos en la navegación por teclado.",
+            "Simulación del comportamiento del enfoque en formularios y botones.",
+            "Evaluación de la visibilidad de los indicadores de selección."
+          ],
+          "switch_id": "enfoqueSwitch"
+        }
+      ]
+    },
+    "capacitacion": {
+      "herramienta": [
+        {
+          "id": 1,
+          "titulo": "Simulador de discapacidad visual",
+          "subtitulo": "Muestra cómo se ve el sitio para personas con baja visión.",
+          "descripcion": "Permite aplicar filtros visuales para simular condiciones como daltonismo, cataratas y glaucoma.",
+          "caracteristicas": [
+            "Filtros para diferentes tipos de discapacidad visual.",
+            "Permite evaluar la accesibilidad del diseño.",
+            "Facilita la empatía con los usuarios."
+          ],
+          "switch_id": "simuladorVisionSwitch"
+        },
+        {
+          "id": 2,
+          "titulo": "Guía de accesibilidad rápida (WCAG)",
+          "subtitulo": "Explica los principios clave de accesibilidad web.",
+          "descripcion": "Presenta un resumen de los criterios más importantes de accesibilidad según las WCAG, con ejemplos prácticos.",
+          "caracteristicas": [
+            "Explicaciones claras y concisas.",
+            "Ejemplos visuales de accesibilidad correcta e incorrecta.",
+            "Enfoque en los cuatro principios: Perceptible, Operable, Comprensible y Robusto."
+          ],
+          "switch_id": "guiaAccesibilidadSwitch"
+        },
+        {
+          "id": 3,
+          "titulo": "Modo solo teclado",
+          "subtitulo": "Prueba la accesibilidad sin usar el mouse.",
+          "descripcion": "Simula la navegación solo con teclado (Tab, Enter, Espacio, Flechas).",
+          "caracteristicas": [
+            "Simulación de navegación solo con teclado.",
+            "Indica si el orden de tabulación es correcto.",
+            "Permite entender las dificultades de usuarios sin ratón."
+          ],
+          "switch_id": "modoSoloTecladoSwitch"
+        },
+        {
+          "id": 4,
+          "titulo": "Errores comunes de accesibilidad",
+          "subtitulo": "Identifica y corrige problemas frecuentes en diseño web.",
+          "descripcion": "Presenta ejemplos de errores comunes en accesibilidad web.",
+          "caracteristicas": [
+            "Explicación de errores y su impacto.",
+            "Ejemplos visuales con comparación antes/después.",
+            "Recomendaciones para corregirlos."
+          ],
+          "switch_id": "erroresAccesibilidadSwitch"
+        }
+      ]
+    },
+    "disenoDeInterfaces": {
+      "herramienta": [
+        {
+          "id": 1,
+          "titulo": "Escala de texto accesible",
+          "subtitulo": "Ajusta el tamaño del texto para mejorar la legibilidad.",
+          "descripcion": "Permite modificar el tamaño de la tipografía para garantizar la legibilidad.",
+          "caracteristicas": [
+            "Ajuste dinámico del tamaño de letra.",
+            "Cumple con las recomendaciones de accesibilidad.",
+            "Mejora la experiencia de lectura sin afectar el diseño."
+          ],
+          "switch_id": "escalaTextoSwitch"
+        },
+        {
+          "id": 2,
+          "titulo": "Espaciado de texto",
+          "subtitulo": "Mejora la legibilidad ajustando el espacio entre palabras y líneas.",
+          "descripcion": "Modifica el interlineado, el espaciado entre caracteres y el espacio entre palabras para facilitar la lectura.",
+          "caracteristicas": [
+            "Ajuste automático de espaciado.",
+            "Ayuda a personas con dificultades de lectura.",
+            "Compatible con diferentes estilos de texto."
+          ],
+          "switch_id": "espaciadoTextoSwitch"
+        },
+        {
+          "id": 3,
+          "titulo": "Modo de lectura fácil",
+          "subtitulo": "Simplifica la interfaz para mejorar la comprensión del contenido.",
+          "descripcion": "Reduce los elementos visuales innecesarios y presenta el contenido en un formato claro.",
+          "caracteristicas": [
+            "Elimina distracciones visuales.",
+            "Mantiene el contenido principal accesible.",
+            "Facilita la navegación y la lectura."
+          ],
+          "switch_id": "modoLecturaFacilSwitch"
+        },
+        {
+          "id": 4,
+          "titulo": "Paleta de colores accesibles",
+          "subtitulo": "Sugiere combinaciones de colores con buen contraste.",
+          "descripcion": "Permite probar diferentes esquemas de color para garantizar accesibilidad.",
+          "caracteristicas": [
+            "Generador de combinaciones accesibles.",
+            "Verificación automática de contraste.",
+            "Adaptable a diferentes estilos de diseño."
+          ],
+          "switch_id": "paletaColoresSwitch"
+        }
+      ]
+    },
+    "desarrolloWeb": {
+      "herramienta": [
+        {
+          "id": 1,
+          "titulo": "Etiqueta ARIA Live para anuncios dinámicos",
+          "subtitulo": "Permite que los lectores de pantalla detecten cambios en tiempo real.",
+          "descripcion": "Implementa atributos ARIA para que los cambios en el contenido sean anunciados automáticamente a los usuarios que utilizan lectores de pantalla.",
+          "caracteristicas": [
+            "Compatible con tecnologías de asistencia.",
+            "Anuncia cambios sin necesidad de recargar la página.",
+            "Mejora la accesibilidad de contenido dinámico."
+          ],
+          "switch_id": "ariaLiveSwitch"
+        },
+        {
+          "id": 2,
+          "titulo": "Orden de navegación con teclado",
+          "subtitulo": "Asegura que los elementos se naveguen en el orden correcto.",
+          "descripcion": "Garantiza que los usuarios puedan navegar por la página utilizando solo el teclado, asegurando un orden lógico de tabulación.",
+          "caracteristicas": [
+            "Compatible con navegación por teclado (Tab y Enter).",
+            "Indica errores en el orden de tabulación.",
+            "Mejora la experiencia de usuarios sin ratón."
+          ],
+          "switch_id": "ordenTecladoSwitch"
+        },
+        {
+          "id": 3,
+          "titulo": "Modo sin animaciones",
+          "subtitulo": "Reduce movimientos innecesarios para evitar mareos o distracción.",
+          "descripcion": "Desactiva las animaciones y efectos visuales para evitar molestias en personas con sensibilidad al movimiento o trastornos vestibulares.",
+          "caracteristicas": [
+            "Opción de desactivar transiciones y efectos.",
+            "Compatible con configuraciones del sistema operativo.",
+            "Reduce el esfuerzo visual al navegar."
+          ],
+          "switch_id": "modoSinAnimacionesSwitch"
+        },
+        {
+          "id": 4,
+          "titulo": "Zoom sin perder funcionalidad",
+          "subtitulo": "Asegura que la página se mantenga funcional al ampliar la vista.",
+          "descripcion": "Demuestra cómo una página debe adaptarse al ser ampliada hasta un 200% sin afectar su funcionalidad ni diseño.",
+          "caracteristicas": [
+            "Simulación de zoom accesible.",
+            "Comparación entre buen y mal diseño al ampliar.",
+            "Compatible con diferentes tamaños de pantalla."
+          ],
+          "switch_id": "zoomFuncionalSwitch"
+        }
+      ]
+    }
+  }
+  

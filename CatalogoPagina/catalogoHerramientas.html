@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catalogoStyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Catalogo Herramientas</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+
+            <div class="navbar-logo">
+                <a href="/">
+                    <img src="logo-01.svg" alt="VisionUX Lab Logo" class="logo-icon">
+                    </svg>
+                    <span class="logo-text">VisionUX Lab</span>
+                </a>
+
+            </div>
+            <div class="navbar-links">
+                <a href="/" class="nav-link">Acerca de</a>
+                <a href="/" class="nav-link">Herramientas</a>
+                <a href="/" class="nav-link">Recursos</a>
+                <a href="/" class="nav-link">Contacto</a>
+            </div>
+            <div class="navbar-toggle">
+                <button id="menu-toggle" aria-label="Toggle menu">
+                    <svg class="menu-icon" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="/" class="nav-link">Acerca de</a>
+            <a href="/" class="nav-link">Herramientas</a>
+            <a href="/" class="nav-link">Recursos</a>
+            <a href="/" class="nav-link">Contacto</a>
+        </div>
+    </nav>
+
+    <div class="banner_container">
+        <div class="banner">
+            <h1>Pruebas de Accesibilidad</h1>
+            <div class="image">
+                <img src="heroSectionImg.svg" alt="Imagen referente a vision">
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="subtitulo">
+        <p>
+            Herramientas que ayudan a personas con algun grado de discapacidad visual. <br>
+            Estas funcionalidades ayudaran a personalizar la experiencia del usuario, controlar mejor sus dispositivos, etc.
+        </p>
+    </div>
+
+
+    <nav class="secondary-navbar">
+        <div class="secondary-navbar-container">
+            <a href="#" class="secondary-nav-link active" data-section="accesibilidadWeb">Pruebas de Accesibilidad</a>
+            <a href="#" class="secondary-nav-link" data-section="disenoDeInterfaces">Diseño de interfaces</a>
+            <a href="#" class="secondary-nav-link" data-section="desarrolloWeb">Desarrollo web</a>
+            <a href="#" class="secondary-nav-link" data-section="capacitacion">Capacitación y recursos</a>
+        </div>
+    </nav>
+    
+    
+
+    <div class="cards-container">
+        
+        <div class="card">
+            <h2>Prueba de contraste</h2>
+            <h3>Mejora de visibilidad para usuarios con baja visión.</h3>
+            <p>El alto contraste incrementa la diferencia entre los colores de fondo y texto, mejorando la legibilidad para personas con baja visión o sensibilidad a la luz.</p>
+            <p>Características destacadas:</p>
+            <ul>
+                <li>Aplicación de esquemas de alto contraste en tiempo real.</li>
+                <li>Cumplimiento con los estándares de accesibilidad (WCAG).</li>
+                <li>Evaluación del contraste en textos, botones y otros elementos visuales.</li>
+            </ul>
+
+            <label class="switch">
+
+                <input  id="contrastSwitch" type="checkbox">
+
+                <div class="slider">
+                    <div class="circle">
+                        <svg class="cross" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 365.696 365.696" y="0" x="0" height="6" width="6" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path data-original="#000000" fill="currentColor" d="M243.188 182.86 356.32 69.726c12.5-12.5 12.5-32.766 0-45.247L341.238 9.398c-12.504-12.503-32.77-12.503-45.25 0L182.86 122.528 69.727 9.374c-12.5-12.5-32.766-12.5-45.247 0L9.375 24.457c-12.5 12.504-12.5 32.77 0 45.25l113.152 113.152L9.398 295.99c-12.503 12.503-12.503 32.769 0 45.25L24.48 356.32c12.5 12.5 32.766 12.5 45.247 0l113.132-113.132L295.99 356.32c12.503 12.5 32.769 12.5 45.25 0l15.081-15.082c12.5-12.504 12.5-32.77 0-45.25zm0 0"></path>
+                            </g>
+                        </svg>
+                        <svg class="checkmark" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 24 24" y="0" x="0" height="10" width="10" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path class="" data-original="#000000" fill="currentColor" d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+<!-- 
+
+        <div class="card">
+            <h2>Daltonismo</h2>
+            <h3>Adaptación del color para accesibilidad visual.</h3>
+            <p>El daltonismo es una alteración de la percepción del color que dificulta la distinción de ciertos tonos. 
+                Esta herramienta permite simular distintos tipos de daltonismo para evaluar la accesibilidad del diseño web.</p>
+            <p>Características destacadas:</p>
+            <ul>
+                <li>Simulación de diferentes tipos de daltonismo protanopía, deuteranopía, tritanopía.</li>
+                <li>Aplicación de filtros sobre la interfaz para visualizar cambios en tiempo real.</li>
+                <li>Evaluación de la diferenciación de colores en la interfaz.</li>
+                
+            </ul>
+
+            <label class="switch">
+                <input  type="checkbox">
+                <div class="slider">
+                    <div class="circle">
+                        <svg class="cross" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 365.696 365.696" y="0" x="0" height="6" width="6" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path data-original="#000000" fill="currentColor" d="M243.188 182.86 356.32 69.726c12.5-12.5 12.5-32.766 0-45.247L341.238 9.398c-12.504-12.503-32.77-12.503-45.25 0L182.86 122.528 69.727 9.374c-12.5-12.5-32.766-12.5-45.247 0L9.375 24.457c-12.5 12.504-12.5 32.77 0 45.25l113.152 113.152L9.398 295.99c-12.503 12.503-12.503 32.769 0 45.25L24.48 356.32c12.5 12.5 32.766 12.5 45.247 0l113.132-113.132L295.99 356.32c12.503 12.5 32.769 12.5 45.25 0l15.081-15.082c12.5-12.504 12.5-32.77 0-45.25zm0 0"></path>
+                            </g>
+                        </svg>
+                        <svg class="checkmark" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 24 24" y="0" x="0" height="10" width="10" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path class="" data-original="#000000" fill="currentColor" d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <div class="card">
+            <h2>Lector de pantalla</h2>
+            <h3>Conversión de texto a voz para accesibilidad.</h3>
+            <p>Los lectores de pantalla permiten que personas con discapacidad visual accedan al contenido web mediante síntesis de voz. 
+                Esta herramienta simula su funcionamiento para verificar la accesibilidad del contenido.</p>
+            <p>Características destacadas:</p>
+            <ul>
+                <li>Lectura en voz alta del contenido textual de una página.</li>
+                <li>Evaluación de la estructura semántica del sitio web.</li>
+                <li>Detección de elementos sin etiquetas accesibles. </li>
+            </ul>
+
+            <label class="switch">
+                <input  type="checkbox">
+                <div class="slider">
+                    <div class="circle">
+                        <svg class="cross" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 365.696 365.696" y="0" x="0" height="6" width="6" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path data-original="#000000" fill="currentColor" d="M243.188 182.86 356.32 69.726c12.5-12.5 12.5-32.766 0-45.247L341.238 9.398c-12.504-12.503-32.77-12.503-45.25 0L182.86 122.528 69.727 9.374c-12.5-12.5-32.766-12.5-45.247 0L9.375 24.457c-12.5 12.504-12.5 32.77 0 45.25l113.152 113.152L9.398 295.99c-12.503 12.503-12.503 32.769 0 45.25L24.48 356.32c12.5 12.5 32.766 12.5 45.247 0l113.132-113.132L295.99 356.32c12.503 12.5 32.769 12.5 45.25 0l15.081-15.082c12.5-12.504 12.5-32.77 0-45.25zm0 0"></path>
+                            </g>
+                        </svg>
+                        <svg class="checkmark" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 24 24" y="0" x="0" height="10" width="10" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path class="" data-original="#000000" fill="currentColor" d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <div class="card">
+            <h2>Modo Enfoque</h2>
+            <h3>Indicador visual para navegación con teclado.</h3>
+            <p>El enfoque visual es esencial para usuarios que navegan sin mouse. 
+                Esta herramienta resalta los elementos activos durante la navegación con teclado, mejorando la accesibilidad de la interfaz.</p>
+            <p>Características destacadas:</p>
+            <ul>
+                <li>Resaltado de los elementos activos en la navegación por teclado.</li>
+                <li>Simulación del comportamiento del enfoque en formularios y botones.</li>
+                <li>Evaluación de la visibilidad de los indicadores de selección.</li>
+            </ul>
+
+            <label class="switch">
+                <input  type="checkbox">
+                <div class="slider">
+                    <div class="circle">
+                        <svg class="cross" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 365.696 365.696" y="0" x="0" height="6" width="6" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path data-original="#000000" fill="currentColor" d="M243.188 182.86 356.32 69.726c12.5-12.5 12.5-32.766 0-45.247L341.238 9.398c-12.504-12.503-32.77-12.503-45.25 0L182.86 122.528 69.727 9.374c-12.5-12.5-32.766-12.5-45.247 0L9.375 24.457c-12.5 12.504-12.5 32.77 0 45.25l113.152 113.152L9.398 295.99c-12.503 12.503-12.503 32.769 0 45.25L24.48 356.32c12.5 12.5 32.766 12.5 45.247 0l113.132-113.132L295.99 356.32c12.503 12.5 32.769 12.5 45.25 0l15.081-15.082c12.5-12.504 12.5-32.77 0-45.25zm0 0"></path>
+                            </g>
+                        </svg>
+                        <svg class="checkmark" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 24 24" y="0" x="0" height="10" width="10" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path class="" data-original="#000000" fill="currentColor" d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        
+    </div>
+-->
+    <script src="ConsultarAPI.js"></script>
+    <script src="catalogoJS.js"></script>
+
+</body>
+</html>
