@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   
-    // Procesa cada enlace en la barra secundaria
+    // rocesa cada enlace en la barra secundaria
     navLinks.forEach(link => {
       link.addEventListener("click", (e) => {
         e.preventDefault();
@@ -28,24 +28,24 @@ document.addEventListener("DOMContentLoaded", () => {
         navLinks.forEach(lnk => lnk.classList.remove("active"));
         link.classList.add("active");
   
-        // Extraer el label y la categoría correspondiente
+        // Extraer el label y la categoria correspondiente
         const categoryLabel = link.textContent.trim();
         const categoria = mapCategoryLabel(categoryLabel);
   
-        // Actualizar el título del banner con el nombre de la categoría seleccionada
+        // Actualizar el titulo del banner con el nombre de la categoria seleccionada
         bannerTitleElement.textContent = categoryLabel;
         
-        // Limpiar el contenedor para preparar la nueva información
+        // Limpiar el contenedor para preparar la nueva informacion
         cardsContainer.innerHTML = "";
   
-        // Primero, buscamos en el endpoint raíz la lista de endpoints.
+        // buscar en el endpoint en la lista de endpoints.
         fetch("http://localhost:3000/")
           .then((res) => res.json())
           .then((data) => {
-            // data.endpoints es el arreglo de herramientas con su información básica
+            // data.endpoints es el arreglo de herramientas con su informacion basica
             const endpointsFiltrados = data.endpoints.filter(item => item.categoria === categoria);
   
-            // Por cada herramienta filtrada, hacemos una petición a su endpoint para obtener detalles completos
+            // Por cada herramienta hacemos una peticion a su endpoint para obtener detalles completos
             endpointsFiltrados.forEach(item => {
               fetch(item.endpoint)
                 .then(res => res.json())
@@ -54,13 +54,13 @@ document.addEventListener("DOMContentLoaded", () => {
                   const card = document.createElement("div");
                   card.className = "card";
   
-                  // Generamos la lista de características a partir del arreglo
+                  // Generamos la lista de caracteristicas a partir del arreglo
                   let caracteristicasHTML = "";
                   details.caracteristicas.forEach(caracteristica => {
                     caracteristicasHTML += `<li>${caracteristica}</li>`;
                   });
   
-                  // Si la herramienta tiene un switch (identificado por switch_id), se lo incluye
+                  // Si la herramienta tiene un switch se lo incluye
                   let switchHTML = "";
                   if (details.switch_id) {
                     switchHTML = `
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     `;
                   }
   
-                  // Armamos el contenido interno de la tarjeta.
+                  // Armamos el contenido interno de la tarjeta
                   card.innerHTML = `
                     <h2>${details.titulo}</h2>
                     <h3>${details.subtitulo}</h3>
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   
-    // Cargar por defecto la categoría "Pruebas de Accesibilidad" al inicio.
+    // Cargar por defecto la categoria Pruebas de Accesibilidad al inicio
     const defaultLink = document.querySelector(".secondary-nav-link.active");
     if (defaultLink) {
       defaultLink.click();
