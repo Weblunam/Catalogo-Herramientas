@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cardsContainer = document.querySelector(".cards-container");
     const bannerTitleElement = document.querySelector(".banner h1");
   
-    // Función auxiliar para mapear el texto del enlace a la clave de categoría en el JSON
+    //Funcion para mapear el texto del enlace junto con la clave del JSON
     function mapCategoryLabel(label) {
       switch (label) {
         case "Pruebas de Accesibilidad":
